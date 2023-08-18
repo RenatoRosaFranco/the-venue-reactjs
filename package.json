@@ -12,6 +12,8 @@
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
