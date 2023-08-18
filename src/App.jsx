@@ -6,6 +6,7 @@ import Featured    from './components/featured/Index';
 import VenueNfo    from './components/venueNfo/Index';
 import HightLights from './components/highlights/Index';
 import Pricing     from './components/pricing/Index';
+import Location    from './components/location/Index';
 import Footer      from './components/layouts/Footer';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <VenueNfo />
         <HightLights />
         <Pricing />
+        <Location />
       </>
 
       <Footer />
