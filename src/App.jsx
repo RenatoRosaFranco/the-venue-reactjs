@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { Element } from 'react-scroll';
 import './resources/styles.css';
 
 import Header      from './components/layouts/Header';
@@ -14,17 +15,29 @@ const App = () => {
     <div className='App'>
       <Header />
 
-      <>  
+      <Element name='featured'>  
         <Featured />
+      </Element>
+
+      <Element name='venuenfo'>
         <VenueNfo />
+      </Element>
+
+      <Element name='highlights'>
         <HightLights />
+      </Element>
+
+      <Element name='pricing'>
         <Pricing />
+      </Element>
+
+      <Element name='location'>
         <Location />
-      </>
+      </Element>
 
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App;

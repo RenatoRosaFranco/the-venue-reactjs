@@ -1,20 +1,30 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 import { Drawer, List, ListItem } from '@material-ui/core';
 
 const SideBar = (props) => {
   const links = [
-    { where: 'fatured',    value: 'To top' },
-    { where: 'venueinfo',  value: 'Venue NFO' },
+    { where: 'featured',   value: 'To top' },
+    { where: 'venuenfo',   value: 'Venue NFO' },
     { where: 'highlights', value: 'Highlights' },
     { where: 'pricing',    value: 'Pricing' },
     { where: 'location',   value: 'Location' },  
   ];
 
+  const scrollToElement = (element) => {
+    scroller.scrollTo(element, {
+      duration: 1500,
+      delay:    100,
+      smooth:   true,
+      offset:   -150 
+    })
+  }
+
   const renderItem = (item) => {
     return(
-      <ListItem button onClick={ () => alert(item.where) }
-      key={item.where}>
-        {item.value}
+      <ListItem button onClick={ () => scrollToElement(item.where) }
+      key={ item.where }>
+        { item.value }
       </ListItem>
     );
   }
@@ -22,7 +32,7 @@ const SideBar = (props) => {
   return(
     <Drawer
       anchor='right'
-      open={props.open}
+      open={ props.open }
       onClose={ () => props.onClose(false) }
     >
 
