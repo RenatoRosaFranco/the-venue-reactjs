@@ -25,7 +25,6 @@ const Carrousel = () => {
           <div className="carrousel_image"
             style={{ background: `url('${slide_one}')`,
             height: `${window.innerHeight}px` }}>
-            asda
           </div>
         </div>
         <div>
