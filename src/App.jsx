@@ -1,10 +1,11 @@
 import { React } from 'react';
 import './resources/styles.css';
 
-import Header from './components/layouts/Header';
-import Featured from './components/featured/Index';
-import VenueNfo from './components/venueNfo/Index';
-import Footer from './components/layouts/Footer';
+import Header      from './components/layouts/Header';
+import Featured    from './components/featured/Index';
+import VenueNfo    from './components/venueNfo/Index';
+import HightLights from './components/highlights/Index';
+import Footer      from './components/layouts/Footer';
 
 const App = () => {
   return(
@@ -14,6 +15,7 @@ const App = () => {
       <>  
         <Featured/>
         <VenueNfo/>
+        <HightLights/>
       </>
 
       <div style={{backgroundColor: 'red', height: '800px'}}></div>
