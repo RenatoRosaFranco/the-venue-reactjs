@@ -5,6 +5,7 @@ import Header      from './components/layouts/Header';
 import Featured    from './components/featured/Index';
 import VenueNfo    from './components/venueNfo/Index';
 import HightLights from './components/highlights/Index';
+import Pricing     from './components/pricing/Index';
 import Footer      from './components/layouts/Footer';
 
 const App = () => {
@@ -13,15 +14,11 @@ const App = () => {
       <Header />
 
       <>  
-        <Featured/>
-        <VenueNfo/>
-        <HightLights/>
+        <Featured />
+        <VenueNfo />
+        <HightLights />
+        <Pricing />
       </>
-
-      <div style={{backgroundColor: 'red', height: '800px'}}></div>
-      <div style={{backgroundColor: 'blue', height: '800px'}}></div>
-      <div style={{backgroundColor: 'green', height: '800px'}}></div>
-      <div style={{backgroundColor: 'yellow', height: '800px'}}></div>
 
       <Footer />
     </div>
